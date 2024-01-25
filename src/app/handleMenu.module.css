@@ -44,3 +44,25 @@
     display: flex;
     justify-content: center;
 }
+@media only screen and (max-width: 610px) {
+    .navigator_parent {
+        width: 95vw;
+    }
+    .navigator_child,
+    .navigator_child a {
+        gap: 0px;
+    }
+    .navigator_parent {
+        justify-content: space-around
+    }
+}
+@media only screen and (max-width: 400px) {
+    .navigator_logo {
+        display: none;
+    }
+    .navigator_child,
+    .navigator_child a {
+        gap: 25px;
+        margin-left: 0;
+    }
+}
