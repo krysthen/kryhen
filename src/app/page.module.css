@@ -472,7 +472,6 @@
         justify-content: flex-end;
     }
 }
-
 @media only screen and (max-width: 1475px) {
     .main {
         gap: 50px;
@@ -498,7 +497,6 @@
         height: auto;
     }
 }
-
 @media only screen and (max-width: 1190px) {
     .main {
         gap: 30px;
@@ -516,7 +514,7 @@
 }
 @media only screen and (max-width: 1035px) {
     .main {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .kh_container_box {
@@ -582,6 +580,9 @@
     .section_parent_contact_socials_icons a:nth-child(1)::after {
         display: none;
     }
+    .section_parent_contact {
+        flex-direction: column-reverse;
+    }
 }
 @media only screen and (max-width: 610px) {
     .section_ftr {
@@ -610,5 +611,14 @@
     }
     .kh_container_tags {
         gap: 5px;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .kh_container_image {
+        overflow: hidden;
+        min-width: unset;
+    }
+    .kh_container_box_title {
+        font-size: 2rem;
     }
 }
