@@ -21,6 +21,7 @@ export default function Post() {
       {header: 'contest3', url: `/cdn/render5_ecolette.png`, data: `Ecolette product — Third prototype`},
       {header: 'contest4', url: `/cdn/render3_ecolette.png`, data: `Ecolette product — Fourth prototype`},
       {header: 'contest7', url: `/cdn/birthday_gift_boardingpass.png`, data: `Birthday gift — Boarding pass souvenir`},
+      {header: 'contest13', url: `/cdn/klubova_gatsbyparty_@0,5x.png`, data: `Party banner`},
       {header: 'contest14', url: `/cdn/cover_DEMO@0,5x.png`, data: `Cover for celebrity — Prototype`},
       {header: 'contest5', url: `/cdn/graphic_as_1.png`, data: `Akcesoria Smakosza — Banner`},
       {header: 'contest6', url: `/cdn/s500_post.png`, data: `Szybkie500 — Instagram post`},
@@ -29,7 +30,6 @@ export default function Post() {
       {header: 'contest10', url: `/cdn/website_prototype_mockup.png`, data: `Website — Prototype`},
       {header: 'contest11', url: `/cdn/graphic_bloow_2.png`, data: `Bloow — Contest graphic`},
       {header: 'contest12', url: `/cdn/prototype_app.png`, data: `Mobile banking app — Prototype`},
-      {header: 'contest13', url: `/cdn/klubova_gatsbyparty_@0,5x.png`, data: `Party banner`},
       {header: 'contest15', url: `/cdn/ebook-prototype.png`, data: `E-Book — Prototype for cover`},
   ];
   

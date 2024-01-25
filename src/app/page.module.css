@@ -378,11 +378,14 @@
 }
 .section_portfolio_flex div {
     position: relative;
-    width: calc(33% - 12px);
+    width: calc(25% - 12px);
     transition: ease-out 0.3s;
 }
 .section_portfolio_flex div img {
     position: relative !important;
+    display: flex !important;
+    content-visibility: visible;
+    height: auto !important;
 }
 .section_portfolio_flex div:hover {
     scale: 1.2;

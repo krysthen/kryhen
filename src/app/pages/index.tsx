@@ -130,17 +130,15 @@ export default function Home() {
             <div className={styles.kh_section_header}>
               <h1>Portfolio.</h1>
             </div>
-
             <div className={styles.section_portfolio_flex}>
               <Post/>
             </div>
-
         </section>
         <section className={styles.section} id='faq'>
           <div className={styles.kh_section_header}>
-            <h1>Frequently Asked Questions.</h1>
+            <h1>FAQ</h1>
           </div>
-          <Faq />
+          <Faq/>
         </section>
       </div>
       <ScrollToTopButton/>
