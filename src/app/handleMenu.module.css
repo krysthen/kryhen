@@ -1,0 +1,46 @@
+.navigator {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+.navigator_parent {
+    width: 70%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 1900px;
+}
+.navigator_fix {
+    width: 100vw;
+    background-color: rgb(0 0 0 / 92%);
+    border-bottom: .5px solid #1a1a1a;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(25px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 15px 0;
+}
+.navigator_child,
+.navigator_child a {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    color: var(--lightmode-text-rev-grayscale);
+    margin-left: 25px;
+    font-size: 1rem;
+    font-weight: 100;
+    text-decoration: none;
+    font-family: var(--font-basicsans);
+}
+.navigator_child a:is(:hover) {
+    text-decoration: underline;
+}
+.navigator_logo {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}

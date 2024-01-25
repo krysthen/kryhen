@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://use.typekit.net/nos6lro.css");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+:root {
+    --lightmode-text: #000;
+    --lightmode-text-link: #365BD9;
+    --lightmode-text-link-hover: #2947aa;
+    --lightmode-text-rev: #f2f2f2;
+    --lightmode-text-rev-grayscale: #e4e4e4;
+    --lightmode-background: #f2f2f2;
+    --lightmode-background-rev: #000000;
+    --font-basicsans: "basic-sans", sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+*, *::before, *:after{
+    box-sizing: inherit;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--lightmode-background) !important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+.material-symbols-rounded {
+    color: var(--lightmode-text-link);
+}
+::-webkit-scrollbar-track {
+    background: var(--lightmode-background);
+}
+::-webkit-scrollbar-thumb {
+    background: #0a0a0a;
+    border-radius: 5px;
+    border: 2px solid var(--lightmode-background);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0a0a0a;
+    border-radius: 5px;
+    border: 2px solid var(--lightmode-background);
+}   
+h1 {
+    color: var(--lightmode-text);
+    font-family: var(--font-basicsans);
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+h2 {
+    color: var(--lightmode-text);
+    font-family: var(--font-basicsans);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+}
+h3 {
+    color: var(--lightmode-text);
+    font-family: var(--font-basicsans);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+}
+details {
+    cursor: pointer;
+}
+details > summary {
+    list-style-type: none;
+    transition: ease-out 0.3s;
+}
+details[open] > summary {
+    list-style-type: none;
+    transition: ease-out 0.3s;
+}
+summary h2 {
+    align-self: flex-start;
+    width: 85%;
+}
+summary div {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    transition: ease-out 0.3s;
+}
+summary div:after{
+    content: "\002B";
+    font-size: 4rem;
+    transition: ease-out 0.3s;
+}
+details[open] summary div:after{
+    transform: rotate(45deg);
+    transition: ease-out 0.3s;
+}
+summary {
+    transition: ease-out 0.3s;
+    display: inline-flex;
+    width: 100%;
+    border-bottom: 2px solid var(--lightmode-background-rev);
+    align-items: center;
+}
+details p {
+    font-family: var(--font-basicsans);
+    font-size: 1.5rem;
+    font-style: normal;
+    line-height: 98.25%; /* 70.74px */
+    letter-spacing: 1.08px;
+    padding-right: 100px;
+}
+details[open] > p {
+    animation: details-show 0.3s ease-in-out;
+}
+.soonIndicator::after {
+    content: 'Soon';
+    position: absolute;
+    top: -15px;
+    right: 0;
+    background-color: var(--lightmode-text-link);
+    padding: 10px 20px;
+    border-radius: 35px;
+    font-family: var(--font-basicsans);
+    font-size: 1rem;
+    font-style: normal;
+    color: var(--lightmode-text-rev);
+}
+.soonIndicator::after:hover {
+    background-color: var(--lightmode-text-link-hover); 
+}
+@keyframes details-show {
+    from {
+      opacity: 0;
+      transform: var(--details-translate, translateY(-0.5em));
+    }
+}
+@media only screen and (max-width: 665px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem
+    }
+}
+.scrollToTopButton {
+    border-radius: 35px;
+    position: fixed;
+    background-color: var(--lightmode-text-link);
+    border: none;
+    bottom: 25px;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: var(--lightmode-text-rev);
+  }
+  .scrollToTopButton .material-symbols-rounded {
+    color: var(--lightmode-text-rev);
+    transition: all 0.3s ease;
+  }
+  .scrollToTopButton:hover {
+    background-color: var(--lightmode-text-link-hover);
+  }
+  .scrollToTopButton:hover .material-symbols-rounded{
+    transform: translateY(2px);
+  }
+  .scrollToTopButton.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

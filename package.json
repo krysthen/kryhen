@@ -1,0 +1,29 @@
+{
+  "name": "app-port",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "gsap": "^3.12.4",
+    "jsdom": "^23.0.1",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-creative-cursor": "^1.2.7",
+    "react-dom": "^18.2.0",
+    "swr": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "^14.1.0",
+    "typescript": "^5"
+  }
+}
