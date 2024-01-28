@@ -20,7 +20,6 @@ export default function RootLayout({
       <body>
         <HandleMenu />
         {children}
-        <script>AOS.init();</script>
       </body>
     </html>
   );
