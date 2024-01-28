@@ -12,6 +12,8 @@ import { motion } from "framer-motion";
 import Image from 'next/image';
 import Parallaxtext from '../components/parallaxtext'
 import Script from 'next/script'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
 
@@ -20,15 +22,13 @@ export default function Home() {
     color: '#365BD9',
     alignSelf: 'center'
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
       <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></Script>
-      <Script strategy="afterInteractive" id='scriptsf'>
-        {`
-          AOS.init();
-        `}
-      </Script>
       <Cursor isGelly={true} gellyAnimationAmount={1} cursorBackgrounColor='#000000cc'/>
       <div className={styles.root} id='home'>
         <main className={styles.main} >
