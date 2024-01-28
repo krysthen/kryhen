@@ -24,8 +24,6 @@ export default function Home() {
   return (
     <>
       <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></Script>
-      <Script>AOS.init();
-      </Script>
       <Cursor isGelly={true} gellyAnimationAmount={1} cursorBackgrounColor='#000000cc'/>
       <div className={styles.root} id='home'>
         <main className={styles.main} >
