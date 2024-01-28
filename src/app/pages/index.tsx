@@ -1,12 +1,16 @@
 'use client'
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
-import Link from 'next/link'
-import React, { useState, useEffect } from 'react';
-import styles from '../page.module.css'
-import Post from '../components/post'
+import Link from 'next/link';
+import React, { useState, useEffect} from 'react';
+import styles from '../page.module.css';
+import Post from '../components/post';
 import Faq from '../components/faq';
-import Image from 'next/image'
+import ScrollToTopButton from '../components/scrollup';
+import ScrollToDownButton from '../components/scrolldown';
+import { motion } from "framer-motion";
+import Image from 'next/image';
+import Parallaxtext from '../components/parallaxtext'
 
 export default function Home() {
 
@@ -16,38 +20,6 @@ export default function Home() {
     alignSelf: 'center'
   };
 
-  const ScrollToTopButton: React.FC = () => {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollY = window.scrollY;
-        setIsVisible(scrollY > 400);
-      };
-
-      window.addEventListener('scroll', handleScroll);
-
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
-
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    };
-
-    return (
-      <button
-        className={`scrollToTopButton ${isVisible ? 'visible' : ''}`}
-        onClick={scrollToTop}
-      >
-        <div data-cursor-size="80px" data-cursor-color="#6699ffcc"><span className="material-symbols-rounded">arrow_upward</span></div>
-      </button>
-    );
-  };
   return (
     <>
       <Cursor isGelly={true} gellyAnimationAmount={1} cursorBackgrounColor='#000000cc'/>
@@ -109,7 +81,7 @@ export default function Home() {
             <div className={styles.section_ftr_container}>
               <h2>Let&apos;s create your project from scratch.</h2>
               <p>
-              — Every project that passes through my hands is built with passion, incorporating various factors, from precisely chosen color schemes to the final result, which I present in its natural environment. Your only task will be to describe your thoughts on your product, which we want to build. The more details you provide, the more your project will shine!🌟✨ —
+              — Every project that passes through my hands is built with passion, incorporating various factors, from precisely chosen color schemes to the final result, which I present in its natural environment. Your only task will be to describe your thoughts on your product, which we want to build. The more details you provide, the more your project will shine!
               <br/><br/>
               </p>
             </div>
@@ -124,6 +96,14 @@ export default function Home() {
             <div className={styles.section_box_2}></div>
             <div className={styles.section_box_3}></div>
             <div className={styles.section_box_4}><h2>Show more</h2></div>
+          </div>
+        </section>
+        <Parallaxtext />
+        <section className={styles.section}>
+          <div className={styles.onesideleft}>
+            <h2>
+            <b>Hi, I'm Krystian</b>, a skilled computer graphics enthusiast with a passion for creativity. Beyond my educational background and 4 years of industry experience, I offer a keen eye for design, proficiency in graphic software, and a commitment to delivering visually compelling projects. As a freelancer, I'm not just a designer; I'm a dedicated professional who values collaboration and strives to bring unique ideas to life. My diverse interests making me a versatile and innovative contributor to any creative project. Let's connect and explore the possibilities together!
+            </h2>
           </div>
         </section>
         <section className={styles.section+' '+styles.gap} id='products'>
@@ -141,6 +121,7 @@ export default function Home() {
           <Faq/>
         </section>
       </div>
+      <ScrollToDownButton/>
       <ScrollToTopButton/>
     </>
   )
