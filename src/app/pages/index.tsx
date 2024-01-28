@@ -129,7 +129,7 @@ export default function Home() {
           <Faq/>
         </section>
       </div>
-      <section className={styles.section}>
+      <section className={styles.section} style={{marginBottom: '100px'}}>
         <h4 data-aos="fade-up">Made with ❤️ using ⌨️</h4>
       </section>
       <ScrollToDownButton/>

@@ -23,7 +23,6 @@ html {
 body {
     padding: 0;
     margin: 0;
-    margin-bottom: 15px;
     background-color: var(--lightmode-background) !important;
 }
 ::-webkit-scrollbar {
