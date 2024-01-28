@@ -102,7 +102,7 @@ export default function Home() {
         <section className={styles.section}>
           <div className={styles.onesideleft}>
             <h2>
-            <b>Hi, I&aposm;m Krystian</b>, a skilled computer graphics enthusiast with a passion for creativity. Beyond my educational background and 4 years of industry experience, I offer a keen eye for design, proficiency in graphic software, and a commitment to delivering visually compelling projects. As a freelancer, I&aposm; not just a designer; I&apos;m a dedicated professional who values collaboration and strives to bring unique ideas to life. My diverse interests making me a versatile and innovative contributor to any creative project. Let&aposs; connect and explore the possibilities together!
+            <b>Hi, I&apos;m Krystian</b>, a skilled computer graphics enthusiast with a passion for creativity. Beyond my educational background and 4 years of industry experience, I offer a keen eye for design, proficiency in graphic software, and a commitment to delivering visually compelling projects. As a freelancer, I&apos; not just a designer; I&apos;m a dedicated professional who values collaboration and strives to bring unique ideas to life. My diverse interests making me a versatile and innovative contributor to any creative project. Let&apos; connect and explore the possibilities together!
             </h2>
           </div>
         </section>
