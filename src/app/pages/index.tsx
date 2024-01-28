@@ -11,6 +11,7 @@ import ScrollToDownButton from '../components/scrolldown';
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import Parallaxtext from '../components/parallaxtext'
+import Script from 'next/script'
 
 export default function Home() {
 
@@ -22,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <Script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></Script>
       <script>AOS.init();
       </script>
       <Cursor isGelly={true} gellyAnimationAmount={1} cursorBackgrounColor='#000000cc'/>
@@ -126,7 +127,7 @@ export default function Home() {
         </section>
       </div>
       <section className={styles.section}>
-        <h4  data-aos="fade-up">Made with ❤️ using ⌨️</h4>
+        <h4 data-aos="fade-up">Made with ❤️ using ⌨️</h4>
       </section>
       <ScrollToDownButton/>
       <ScrollToTopButton/>
