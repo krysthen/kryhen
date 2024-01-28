@@ -22,10 +22,13 @@ export default function Home() {
 
   return (
     <>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init();
+      </script>
       <Cursor isGelly={true} gellyAnimationAmount={1} cursorBackgrounColor='#000000cc'/>
       <div className={styles.root} id='home'>
         <main className={styles.main} >
-          <header className={styles.kh_container_box}>
+          <header className={styles.kh_container_box} data-aos="fade-right" data-aos-delay="200">
             <div className={styles.kh_container_box_title}>Design and emerge<br/>what you want.</div>
             <div className={styles.kh_container_tags}>
               <div>Digital design</div>
@@ -46,7 +49,7 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <div className={styles.kh_container_image} data-cursor-magnetic data-cursor-color="#ffffffcc">
+          <div data-aos="fade-left" data-aos-delay="300" className={styles.kh_container_image} data-cursor-magnetic data-cursor-color="#ffffffcc">
           </div>
         </main>
         <section className={styles.section}>
@@ -55,21 +58,21 @@ export default function Home() {
             <div className={styles.section_parent_contact_socials}>
 
               <div className={styles.section_parent_contact_socials_icons}>
-                <a href="#" data-cursor-size="80px" target='_blank' data-cursor-color="#6699ffcc" className='soonIndicator'>
+                <a href="#" data-cursor-size="80px" target='_blank' data-cursor-color="#6699ffcc" className='soonIndicator' data-aos="fade-up">
                   <Image src='../../instagram_svg.1.svg' alt='instagram_icon' width={52} height={52}/>
                   <span>Instagram</span>
                 </a>
-                <a href="https://github.com/krysthen" target='_blank' data-cursor-size="80px" data-cursor-color="#6699ffcc">
+                <a href="https://github.com/krysthen" target='_blank' data-cursor-size="80px" data-cursor-color="#6699ffcc" data-aos="fade-up"  data-aos-delay="100">
                   <Image src='../../github_svg.2.svg' alt='github_icon' width={52} height={52}/>
                   <span>Github</span>
                 </a>
-                <a href="https://www.behance.net/krystianhendzel" data-cursor-size="80px" target='_blank' data-cursor-color="#6699ffcc">
+                <a href="https://www.behance.net/krystianhendzel" data-cursor-size="80px" target='_blank' data-cursor-color="#6699ffcc" data-aos="fade-up"  data-aos-delay="200">
                   <Image src='../../behance_svg.3.svg' alt='behance_icon' width={52} height={52}/>
                   <span>Behance</span>
                 </a>
               </div>
             </div>
-            <div className={styles.section_parent_contact_calltoaction}>
+            <div className={styles.section_parent_contact_calltoaction} data-aos="fade-up" data-aos-delay="300">
               <div className={styles.section_parent_contact_calltoaction_btn} data-cursor-size="80px" data-cursor-color="#6699ffcc">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKp1BAQIv-eOGuYShJVOZDxi4NkYu_viY-dvsFpxjo3wCLCA/viewform" target='_blank' className={styles.headerBtnHover}><h2>Contact</h2></a>
               </div>
@@ -77,7 +80,7 @@ export default function Home() {
           </div>
         </section>
           <section className={styles.section} data-cursor-color="#ffffffcc">
-          <div className={styles.section_ftr}>
+          <div className={styles.section_ftr} data-aos="fade-up">
             <div className={styles.section_ftr_container}>
               <h2>Let&apos;s create your project from scratch.</h2>
               <p>
@@ -102,25 +105,29 @@ export default function Home() {
         <section className={styles.section}>
           <div className={styles.onesideleft}>
             <h2>
-            <b>Hi, I&apos;m Krystian</b>, a skilled computer graphics enthusiast with a passion for creativity. Beyond my educational background and 4 years of industry experience, I offer a keen eye for design, proficiency in graphic software, and a commitment to delivering visually compelling projects. As a freelancer, I&apos; not just a designer; I&apos;m a dedicated professional who values collaboration and strives to bring unique ideas to life. My diverse interests making me a versatile and innovative contributor to any creative project. Let&apos; connect and explore the possibilities together!
+            <b data-aos="fade-right">Hi, I&apos;m Krystian</b><span data-aos="fade-right" data-aos-delay="400">, a skilled computer graphics enthusiast with a passion for creativity. Beyond my educational background and 4 years of industry experience, I offer a keen eye for design, proficiency in graphic software, and a commitment to delivering visually compelling projects. As a freelancer, I&apos; not just a designer; I&apos;m a dedicated professional who values collaboration and strives to bring unique ideas to life. My diverse interests making me a versatile and innovative contributor to any creative project. Let&apos; connect and explore the possibilities together!
+            </span>
             </h2>
           </div>
         </section>
         <section className={styles.section+' '+styles.gap} id='products'>
             <div className={styles.kh_section_header}>
-              <h1>Portfolio.</h1>
+              <h1 data-aos="fade-right">Portfolio.</h1>
             </div>
             <div className={styles.section_portfolio_flex}>
-              <Post/>
+              <Post />
             </div>
         </section>
         <section className={styles.section} id='faq'>
           <div className={styles.kh_section_header}>
-            <h1>FAQ</h1>
+            <h1 data-aos="fade-right">FAQ</h1>
           </div>
           <Faq/>
         </section>
       </div>
+      <section className={styles.section}>
+        <h4  data-aos="fade-up">Made with ❤️ using ⌨️</h4>
+      </section>
       <ScrollToDownButton/>
       <ScrollToTopButton/>
     </>

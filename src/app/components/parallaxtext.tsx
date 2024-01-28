@@ -75,7 +75,7 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 
 export default function Parallaxtext() {
   return (
-    <section className={styles.sectionFixed}>
+    <section className={styles.sectionFixed} data-aos="fade-up">
       <ParallaxText baseVelocity={-5}>Digital design - Branding - Company identity - </ParallaxText>
       <ParallaxText baseVelocity={5}>Printing - UI/UX - Desktop publishing - 3D Modeling - </ParallaxText>
     </section>

@@ -28,7 +28,7 @@ export default function Faq() {
   return (
     faqDesc.map((item, index) => (
       <DivPropsTag key={index} question={item.question} className={styles.section_portfolio_works}>
-        <details>
+        <details data-aos="fade-up">
             <summary className={styles.summary}>
                 <h2>{item.question}</h2>
                 <div></div>
