@@ -26,7 +26,7 @@ export default function ScrollToDownButton() {
     };
 
     return (
-        <div className='scrollToDown'>
+        <div className='scrollToDown' data-cursor-size="80px" data-cursor-color="#6699ffcc" data-cursor-text="Contact">
             <button className={`scrollToDownButton ${isVisible ? '' : 'visible'}`} onClick={scrollToTop}>
                 <div data-cursor-size="80px" data-cursor-color="#6699ffcc"><span className="material-symbols-rounded">arrow_downward</span></div>
             </button>

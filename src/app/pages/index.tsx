@@ -62,22 +62,22 @@ export default function Home() {
             <div className={styles.section_parent_contact_socials}>
 
               <div className={styles.section_parent_contact_socials_icons}>
-                <a href="#" data-cursor-size="80px" target='_blank' data-cursor-color="#6699ffcc" className='soonIndicator' data-aos="fade-up">
+                <a href="#" data-cursor-size="80px" target='_blank' data-cursor-color="#6699ffcc" className='soonIndicator' data-aos="fade-up" data-cursor-text="Instagram">
                   <Image src='../../instagram_svg.1.svg' alt='instagram_icon' width={52} height={52}/>
                   <span>Instagram</span>
                 </a>
-                <a href="https://github.com/krysthen" target='_blank' data-cursor-size="80px" data-cursor-color="#6699ffcc" data-aos="fade-up"  data-aos-delay="100">
+                <a href="https://github.com/krysthen" target='_blank' data-cursor-size="80px" data-cursor-color="#6699ffcc" data-aos="fade-up"  data-aos-delay="100" data-cursor-text="Github">
                   <Image src='../../github_svg.2.svg' alt='github_icon' width={52} height={52}/>
                   <span>Github</span>
                 </a>
-                <a href="https://www.behance.net/krystianhendzel" data-cursor-size="80px" target='_blank' data-cursor-color="#6699ffcc" data-aos="fade-up"  data-aos-delay="200">
+                <a href="https://www.behance.net/krystianhendzel" data-cursor-size="80px" target='_blank' data-cursor-color="#6699ffcc" data-aos="fade-up" data-aos-delay="200" data-cursor-text="Behance">
                   <Image src='../../behance_svg.3.svg' alt='behance_icon' width={52} height={52}/>
                   <span>Behance</span>
                 </a>
               </div>
             </div>
             <div className={styles.section_parent_contact_calltoaction} data-aos="fade-up" data-aos-delay="300">
-              <div className={styles.section_parent_contact_calltoaction_btn} data-cursor-size="80px" data-cursor-color="#6699ffcc">
+              <div className={styles.section_parent_contact_calltoaction_btn} data-cursor-size="80px" data-cursor-color="#6699ffcc" data-cursor-text="Contact">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKp1BAQIv-eOGuYShJVOZDxi4NkYu_viY-dvsFpxjo3wCLCA/viewform" target='_blank' className={styles.headerBtnHover}><h2>Contact</h2></a>
               </div>
             </div>

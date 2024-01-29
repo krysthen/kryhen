@@ -137,6 +137,10 @@ details[open] > p {
 .soonIndicator::after:hover {
     background-color: var(--lightmode-text-link-hover); 
 }
+.c-cursor__inner {
+    color: var(--lightmode-text-rev);
+    font-family: var(--font-basicsans) !important;
+}
 @keyframes details-show {
     from {
       opacity: 0;
