@@ -33,7 +33,7 @@ export default function Home() {
       <div className={styles.root} id='home'>
         <main className={styles.main} >
           <header className={styles.kh_container_box} data-aos="fade-right" data-aos-delay="200">
-            <div className={styles.kh_container_box_title}>Zaprojektuj i stwórz to,<br/> co chcesz.</div>
+            <div className={styles.kh_container_box_title}>Zaprojektuj i stwórz,<br/>to co chcesz.</div>
             <div className={styles.kh_container_tags}>
               <div>Projektowanie cyfrowe</div>
               <div>Branding</div>
