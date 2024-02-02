@@ -78,7 +78,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.section_parent_contact_calltoaction} data-aos="fade-up" data-aos-delay="300">
-              <div className={styles.section_parent_contact_calltoaction_btn} data-cursor-size="80px" data-cursor-color="#6699ffcc" data-cursor-text="Contact">
+              <div className={styles.section_parent_contact_calltoaction_btn} data-cursor-size="80px" data-cursor-color="#6699ffcc" data-cursor-text="Kontakt">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKp1BAQIv-eOGuYShJVOZDxi4NkYu_viY-dvsFpxjo3wCLCA/viewform" target='_blank' className={styles.headerBtnHover}><h2>Kontakt</h2></a>
               </div>
             </div>
