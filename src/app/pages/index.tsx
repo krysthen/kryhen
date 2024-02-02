@@ -33,7 +33,7 @@ export default function Home() {
       <div className={styles.root} id='home'>
         <main className={styles.main} >
           <header className={styles.kh_container_box} data-aos="fade-right" data-aos-delay="200">
-            <div className={styles.kh_container_box_title}>Zaprojektuj i stwórz to,<br/>to co chcesz.</div>
+            <div className={styles.kh_container_box_title}>Zaprojektuj i stwórz to,<br/> co chcesz.</div>
             <div className={styles.kh_container_tags}>
               <div>Projektowanie cyfrowe</div>
               <div>Branding</div>
@@ -110,7 +110,7 @@ export default function Home() {
         <section className={styles.section}>
           <div className={styles.onesideleft}>
             <h2>
-            <b data-aos="fade-right">Cześć! Jestem Krystian,</b><span data-aos="fade-right" data-aos-delay="400">zajmuje się głównie materiałami graficznymi oraz pasją do ich kreatywności. Oprócz mojego wykształcenia i 6-letniego doświadczenia w branży, oferuję bystre oko do projektowania, biegłość w oprogramowaniu graficznym i zaangażowanie w dostarczanie atrakcyjnych wizualnie projektów. Jako freelancer jestem nie tylko projektantem, ale także oddanym profesjonalistą, który ceni sobie współpracę i stara się wcielać w życie unikalne pomysły. Moje różnorodne zainteresowania sprawiają, że jestem wszechstronnym i innowacyjnym pracownikiem w każdym kreatywnym projekcie. Połączmy się i odkryjmy razem możliwości!
+            <b data-aos="fade-right">Cześć! Jestem Krystian, </b><span data-aos="fade-right" data-aos-delay="400">zajmuje się głównie materiałami graficznymi oraz pasją do ich kreatywności. Oprócz mojego wykształcenia i 6-letniego doświadczenia w branży, oferuję bystre oko do projektowania, biegłość w oprogramowaniu graficznym i zaangażowanie w dostarczanie atrakcyjnych wizualnie projektów. Jako freelancer jestem nie tylko projektantem, ale także oddanym profesjonalistą, który ceni sobie współpracę i stara się wcielać w życie unikalne pomysły. Moje różnorodne zainteresowania sprawiają, że jestem wszechstronnym i innowacyjnym pracownikiem w każdym kreatywnym projekcie. Połączmy się i odkryjmy razem możliwości!
             </span>
             </h2>
           </div>
