@@ -11,9 +11,9 @@ export default function HandleMenu() {
             <Image src='../icon.svg' width={32} height={20} alt='kh_logo'/>
           </div>
           <div className={styles.navigator_child}>
-            <div><a href={"#home"}>Home</a></div>
-            <div><a href={"#contact"}>Contact</a></div>
-            <div><a href={"#products"}>Products</a></div>
+            <div><a href={"#home"}>home</a></div>
+            <div><a href={"#contact"}>Kontakt</a></div>
+            <div><a href={"#products"}>Produkty</a></div>
             <div><a href={"#faq"}>Faq</a></div>
           </div>
         </div>

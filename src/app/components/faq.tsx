@@ -17,12 +17,12 @@ const DivPropsTag: React.FC<DivProps> = ({className, children}) => {
 }
 export default function Faq() {
   const faqDesc = [
-      {question: `What form of cooperation do you accept?`, tags: `undefined`, description: `The only forms of cooperation that I accept are a contract for specific work (Umowa o dzieło) and a service contract (Umowa zlecenie).`},
-      {question: `What are your hourly rates or project fees?`, tags: `undefined`, description: `The hourly rate or project fee is contingent upon the complexity and progress of the specific project.`},
-      {question: `How much time do you need to deliver a completed project?`, tags: `undefined`, description: `Each project comes with individual time conditions, from placing the order for the design to sending the final files. The deadline for the project is determined with the client during the project briefing.`},
-      {question: `Do you offer different project variants for the client to choose from?`, tags: `undefined`, description: `Yes, if you prefer, I can create several design variations for the project.`},
-      {question: `Do you provide services related to preparing files for production and offering support after the project is completed?`, tags: `undefined`, description: `Yes, I provide services related to preparing files for production and offer support after the completion of the project, if the client wishes.`},
-      {question: `What is your policy regarding revisions and adjustments after the presentation of the initial project version?`, tags: `undefined`, description: `Each revision is billed at the hourly rate agreed upon during the initial consultation with the client.`},
+      {question: `Jaką formę współpracy akceptujesz?`, tags: `undefined`, description: `Jedyne formy współpracy, jakie akceptuję, to umowa o dzieło oraz umowa zlecenie.`},
+      {question: `Jakie są stawki godzinowe lub opłaty za projekt?`, tags: `undefined`, description: `Stawka godzinowa lub opłata za projekt zależy od złożoności i postępu konkretnego projektu.`},
+      {question: `Ile czasu potrzebujesz na dostarczenie ukończonego projektu?`, tags: `undefined`, description: `Każdy projekt ma indywidualne warunki czasowe, od złożenia zamówienia na projekt do przesłania ostatecznych plików. Termin realizacji projektu ustalany jest z klientem podczas briefingu projektowego.`},
+      {question: `Czy oferujecie różne warianty projektów do wyboru przez klienta?`, tags: `undefined`, description: `Tak, jeśli wolisz, mogę stworzyć kilka wariantów projektu.`},
+      {question: `Czy świadczysz usługi związane z przygotowaniem plików do produkcji i oferujesz wsparcie po zakończeniu projektu?`, tags: `undefined`, description: `Tak, świadczę usługi związane z przygotowaniem plików do produkcji i oferuję wsparcie po zakończeniu projektu, jeśli klient sobie tego życzy.`},
+      {question: `Jaka jest polityka dotycząca poprawek i korekt po przedstawieniu wstępnej wersji projektu?`, tags: `undefined`, description: `Każda korekta jest rozliczana według stawki godzinowej uzgodnionej podczas wstępnej konsultacji z klientem.`},
   ];
   
   return (

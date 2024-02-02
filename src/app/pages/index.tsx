@@ -33,23 +33,24 @@ export default function Home() {
       <div className={styles.root} id='home'>
         <main className={styles.main} >
           <header className={styles.kh_container_box} data-aos="fade-right" data-aos-delay="200">
-            <div className={styles.kh_container_box_title}>Design and emerge<br/>what you want.</div>
+            <div className={styles.kh_container_box_title}>Zaprojektuj i stwórz to,<br/>to co chcesz.</div>
             <div className={styles.kh_container_tags}>
-              <div>Digital design</div>
+              <div>Projektowanie cyfrowe</div>
               <div>Branding</div>
-              <div>Company identity</div>
-              <div>Printing</div>
+              <div>Identyfikacja marki</div>
+              <div>Drukowanie</div>
               <div>UI/UX</div>
-              <div>Desktop publishing</div>
-              <div>3D Modeling</div>
+              <div>DTP</div>
+              <div>Modelowanie 3D</div>
+              <div>Programowanie</div>
             </div>
             <div className={styles.kh_container_description}>
               <div>
                 {<span className="material-symbols-rounded">arrow_outward</span>}
-                <p id='contact'>The graphic on right shows my prototype for mobile application.  </p>
+                <p id='contact'>Grafika ukazana po prawej stronie jest prototypem aplikacji.</p>
               </div>
               <div style={boxStyles}>
-                <Link href='/read-more' style={{display:'none'}}>Read more</Link>
+                <Link href='/readmore' style={{display:'none'}}></Link>
               </div>
             </div>
           </header>
@@ -78,7 +79,7 @@ export default function Home() {
             </div>
             <div className={styles.section_parent_contact_calltoaction} data-aos="fade-up" data-aos-delay="300">
               <div className={styles.section_parent_contact_calltoaction_btn} data-cursor-size="80px" data-cursor-color="#6699ffcc" data-cursor-text="Contact">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKp1BAQIv-eOGuYShJVOZDxi4NkYu_viY-dvsFpxjo3wCLCA/viewform" target='_blank' className={styles.headerBtnHover}><h2>Contact</h2></a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKp1BAQIv-eOGuYShJVOZDxi4NkYu_viY-dvsFpxjo3wCLCA/viewform" target='_blank' className={styles.headerBtnHover}><h2>Kontakt</h2></a>
               </div>
             </div>
           </div>
@@ -86,9 +87,9 @@ export default function Home() {
           <section className={styles.section} data-cursor-color="#ffffffcc">
           <div className={styles.section_ftr} data-aos="fade-up">
             <div className={styles.section_ftr_container}>
-              <h2>Let&apos;s create your project from scratch.</h2>
+              <h2>Stwórzmy projekt od zera!</h2>
               <p>
-              — Every project that passes through my hands is built with passion, incorporating various factors, from precisely chosen color schemes to the final result, which I present in its natural environment. Your only task will be to describe your thoughts on your product, which we want to build. The more details you provide, the more your project will shine!
+              — Każdy projekt, który przechodzi przez moje ręce, jest budowany z pasją, z uwzględnieniem różnych aspektów, od precyzyjnie dobranej kolorystyki po efekt końcowy, który prezentuję w jego naturalnym środowisku. Twoim jedynym zadaniem będzie opisanie swoich spostrzeżeń na temat produktu, który chcemy zbudować. Im więcej szczegółów podasz, tym bardziej Twój projekt będzie błyszczał!
               <br/><br/>
               </p>
             </div>
@@ -96,20 +97,20 @@ export default function Home() {
         </section>
         <section className={styles.section} style={{display: 'none'}}>
           <div className={styles.kh_section_header}>
-            <h1>Featured products.</h1>
+            <h1>Przyszłościowe pomysły.</h1>
           </div>
           <div className={styles.section_parent}>
             <div className={styles.section_box_1}></div>
             <div className={styles.section_box_2}></div>
             <div className={styles.section_box_3}></div>
-            <div className={styles.section_box_4}><h2>Show more</h2></div>
+            <div className={styles.section_box_4}><h2>Pokaż więcej</h2></div>
           </div>
         </section>
         <Parallaxtext />
         <section className={styles.section}>
           <div className={styles.onesideleft}>
             <h2>
-            <b data-aos="fade-right">Hi, I&apos;m Krystian</b><span data-aos="fade-right" data-aos-delay="400">, a skilled computer graphics enthusiast with a passion for creativity. Beyond my educational background and 4 years of industry experience, I offer a keen eye for design, proficiency in graphic software, and a commitment to delivering visually compelling projects. As a freelancer, I&apos; not just a designer; I&apos;m a dedicated professional who values collaboration and strives to bring unique ideas to life. My diverse interests making me a versatile and innovative contributor to any creative project. Let&apos; connect and explore the possibilities together!
+            <b data-aos="fade-right">Cześć! Jestem Krystian,</b><span data-aos="fade-right" data-aos-delay="400">zajmuje się głównie materiałami graficznymi oraz pasją do ich kreatywności. Oprócz mojego wykształcenia i 6-letniego doświadczenia w branży, oferuję bystre oko do projektowania, biegłość w oprogramowaniu graficznym i zaangażowanie w dostarczanie atrakcyjnych wizualnie projektów. Jako freelancer jestem nie tylko projektantem, ale także oddanym profesjonalistą, który ceni sobie współpracę i stara się wcielać w życie unikalne pomysły. Moje różnorodne zainteresowania sprawiają, że jestem wszechstronnym i innowacyjnym pracownikiem w każdym kreatywnym projekcie. Połączmy się i odkryjmy razem możliwości!
             </span>
             </h2>
           </div>
