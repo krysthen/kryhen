@@ -31,6 +31,7 @@ export default function Post() {
       {header: 'contest11', url: `/cdn/graphic_bloow_2.png`, data: `Bloow — Contest graphic`},
       {header: 'contest12', url: `/cdn/prototype_app.png`, data: `Mobile banking app — Prototype`},
       {header: 'contest15', url: `/cdn/ebook-prototype.png`, data: `E-Book — Prototype for cover`},
+      {header: 'contest16', url: `/cdn/prototype-sharefiles.png`, data: `Transfer website - prototype`},
   ];
   
   return (
