@@ -14,6 +14,7 @@ import Parallaxtext from '../components/parallaxtext'
 import Script from 'next/script'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { initGA, logPageView } from '../utils/analytics';
 
 export default function Home() {
 
@@ -24,6 +25,13 @@ export default function Home() {
   };
   useEffect(() => {
     AOS.init();
+  }, []);
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
   }, []);
 
   return (
