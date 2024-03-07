@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import HandleMenu from './components/handleMenu'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: 'Home — Portfolio',
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body>
         <HandleMenu />
         {children}
+        <GoogleAnalytics gaId="G-QKLH1Y70TR" />
       </body>
     </html>
   );
