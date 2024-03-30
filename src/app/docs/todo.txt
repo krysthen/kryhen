@@ -1,2 +1,4 @@
 - Przyciski scroll down oraz scroll up są dalej widoczne dla stanu :hover i najechaniu na niego
 - Responsywność sekcji 'O mnie'
+-
+-
